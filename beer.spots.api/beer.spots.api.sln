@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.Api", "beer.spots
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.Data.Entities", "beer.spots.data.entities\BeerSpots.Data.Entities.csproj", "{7300C767-3AF2-4DE4-9EBB-A4F6F98A3B9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.App", "BeerSpots.App\BeerSpots.App.csproj", "{B93FB4E2-D123-482A-AC8C-59D4D366B79C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7300C767-3AF2-4DE4-9EBB-A4F6F98A3B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7300C767-3AF2-4DE4-9EBB-A4F6F98A3B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7300C767-3AF2-4DE4-9EBB-A4F6F98A3B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B93FB4E2-D123-482A-AC8C-59D4D366B79C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93FB4E2-D123-482A-AC8C-59D4D366B79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93FB4E2-D123-482A-AC8C-59D4D366B79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93FB4E2-D123-482A-AC8C-59D4D366B79C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

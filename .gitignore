@@ -2,11 +2,12 @@
 # Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
 ################################################################################
 
-/beer.spots.api/beer.spots.api/obj/Debug/net6.0
-/beer.spots.api/.vs/beer.spots.api/v17
+/beer.spots.api/.vs
 /beer.spots.api/beer.spots.api/beer.spots.api.csproj.user
 /beer.spots.api/beer.spots.api/obj
-/beer.spots.api/beer.spots.api/bin/Debug/net6.0
+/beer.spots.api/beer.spots.api/bin
 /beer.spots.api/beer.spots.api/BeerSpots.Api.csproj.user
 /beer.spots.api/beer.spots.data.entities/obj
-/beer.spots.api/beer.spots.data.entities/bin/Debug/net6.0
+/beer.spots.api/beer.spots.data.entities/bin
+/beer.spots.api/BeerSpots.App/obj
+/beer.spots.api/BeerSpots.App/bin
