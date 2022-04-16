@@ -1,0 +1,7 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/beer.spots.api/beer.spots.api/obj/Debug/net6.0
+/beer.spots.api/.vs/beer.spots.api/v17
+/beer.spots.api/beer.spots.api/beer.spots.api.csproj.user
