@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\beer.spots.data.entities\BeerSpots.Data.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
