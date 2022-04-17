@@ -3,11 +3,11 @@
 ################################################################################
 
 /beer.spots.api/.vs
-/beer.spots.api/beer.spots.api/beer.spots.api.csproj.user
-/beer.spots.api/beer.spots.api/obj
-/beer.spots.api/beer.spots.api/bin
-/beer.spots.api/beer.spots.api/BeerSpots.Api.csproj.user
-/beer.spots.api/beer.spots.data.entities/obj
-/beer.spots.api/beer.spots.data.entities/bin
+/beer.spots.api/BeerSpots.Api/beer.spots.api.csproj.user
+/beer.spots.api/BeerSpots.Api/obj
+/beer.spots.api/BeerSpots.Api/bin
+/beer.spots.api/BeerSpots.Api/BeerSpots.Api.csproj.user
+/beer.spots.api/BeerSpots.Data.Entities/obj
+/beer.spots.api/BeerSpots.Data.Entities/bin
 /beer.spots.api/BeerSpots.App/obj
 /beer.spots.api/BeerSpots.App/bin

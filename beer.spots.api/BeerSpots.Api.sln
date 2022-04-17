@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.Api", "beer.spots.api\BeerSpots.Api.csproj", "{8B0A1237-EC57-425A-900B-F93A92641A68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.Api", "BeerSpots.Api\BeerSpots.Api.csproj", "{8B0A1237-EC57-425A-900B-F93A92641A68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.Data.Entities", "beer.spots.data.entities\BeerSpots.Data.Entities.csproj", "{7300C767-3AF2-4DE4-9EBB-A4F6F98A3B9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.Data.Entities", "BeerSpots.Data.Entities\BeerSpots.Data.Entities.csproj", "{7300C767-3AF2-4DE4-9EBB-A4F6F98A3B9E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.App", "BeerSpots.App\BeerSpots.App.csproj", "{B93FB4E2-D123-482A-AC8C-59D4D366B79C}"
 EndProject
