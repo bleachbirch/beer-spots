@@ -20,8 +20,8 @@ namespace BeerSpots.Data.DataStore
 
         public async Task AddAsync(Spot spot)
         {
-            var isExists = _spots.Find(x => x.Coordinate.Equals(spot.Coordinate)) is not null;
-            if (isExists) throw new Exception("Spot already exists.");
+            var result = await _spots.Find(x => x.Coordinate.Equals(spot.Coordinate)).FirstOrDefaultAsync();
+            if (result is not null) throw new Exception("Spot already exists.");
             await _spots.InsertOneAsync(spot);
         }
             
@@ -37,6 +37,6 @@ namespace BeerSpots.Data.DataStore
         public async Task<Spot?> GetAsync(Coordinate coordinate) =>
             await _spots.Find(x => x.Coordinate.Equals(coordinate)).FirstOrDefaultAsync();
 
-        public async Task UpdateAsync(Spot spot) => await _spots.ReplaceOneAsync(x => x.Id == spot.Id, spot);
+        public async Task UpdateAsync(Spot spot) => await _spots.ReplaceOneAsync(x => x.Coordinate == spot.Coordinate, spot);
     }
 }

@@ -1,10 +1,11 @@
 ﻿using BeerSpots.App;
+using BeerSpots.App.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace BeerSpots.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/spots")]
     [ApiController]
     public class BeerSpotsController : ControllerBase
     {
@@ -23,28 +24,41 @@ namespace BeerSpots.Api.Controllers
         }
 
         // GET api/<BeerSpotsController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpPost("{radius}")]
+        public async Task<string> GetAsync([FromBody] CoordinateDto coordinate, int radius)
         {
-            return "value";
+            var result = await _app.GetAsync(coordinate, radius);
+            return JsonConvert.SerializeObject(result);
+        }
+
+        // GET api/<BeerSpotsController>/5
+        [HttpPost]
+        public async Task<string> GetAsync([FromBody] CoordinateDto coordinate)
+        {
+            var result = await _app.GetAsync(coordinate);
+            return JsonConvert.SerializeObject(result);
         }
 
         // POST api/<BeerSpotsController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        [Route("create")]
+        public async Task CreateAsync([FromBody] SpotDto spot)
         {
+            await _app.CreateAsync(spot);
         }
 
         // PUT api/<BeerSpotsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public async Task UpdateAsync([FromBody] SpotDto value)
         {
+            await _app.EditAsync(value);
         }
 
         // DELETE api/<BeerSpotsController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete]
+        public async Task DeleteAsync([FromBody] CoordinateDto coordinate)
         {
+            await _app.DeleteAsync(coordinate);
         }
     }
 }

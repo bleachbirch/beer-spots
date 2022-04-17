@@ -20,7 +20,9 @@ namespace BeerSpots.App
         /// </summary>
         /// <param name="coordinate"></param>
         /// <returns></returns>
-        Task<SpotDto?> GetSpotAsync(CoordinateDto coordinate);
+        Task<SpotDto?> GetAsync(CoordinateDto coordinate);
+
+        Task<IEnumerable<SpotDto>> GetAllAsync();
 
         /// <summary>
         /// Creates spot
@@ -39,8 +41,8 @@ namespace BeerSpots.App
         /// <summary>
         /// Deletes spot
         /// </summary>
-        /// <param name="spot"></param>
+        /// <param name="coordinate"></param>
         /// <returns></returns>
-        Task DeleteAsync(SpotDto spot);
+        Task DeleteAsync(CoordinateDto coordinate);
     }
 }
