@@ -2,7 +2,7 @@
 using BeerSpots.App.Models;
 using BeerSpots.Data.Entities;
 
-namespace BeerSpots.App.MapperProfiles
+namespace BeerSpots.App.Impl.MapperProfiles
 {
     internal class BeerSpotProfile : Profile
     {

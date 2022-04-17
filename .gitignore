@@ -11,3 +11,9 @@
 /beer.spots.api/BeerSpots.Data.Entities/bin
 /beer.spots.api/BeerSpots.App/obj
 /beer.spots.api/BeerSpots.App/bin
+/beer.spots.api/BeerSpots.Data.DataStore/obj
+/beer.spots.api/BeerSpots.Data.DataStore/bin
+/beer.spots.api/BeerSpots.App.Impl/obj
+/beer.spots.api/BeerSpots.App.Impl/bin
+/beer.spots.api/BeerSpots.App.DependencyInjection/obj
+/beer.spots.api/BeerSpots.App.DependencyInjection/bin

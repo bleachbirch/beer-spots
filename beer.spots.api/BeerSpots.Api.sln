@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.Api", "BeerSpots.Api\BeerSpots.Api.csproj", "{8B0A1237-EC57-425A-900B-F93A92641A68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerSpots.Api", "BeerSpots.Api\BeerSpots.Api.csproj", "{8B0A1237-EC57-425A-900B-F93A92641A68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.Data.Entities", "BeerSpots.Data.Entities\BeerSpots.Data.Entities.csproj", "{7300C767-3AF2-4DE4-9EBB-A4F6F98A3B9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerSpots.Data.Entities", "BeerSpots.Data.Entities\BeerSpots.Data.Entities.csproj", "{7300C767-3AF2-4DE4-9EBB-A4F6F98A3B9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.App", "BeerSpots.App\BeerSpots.App.csproj", "{B93FB4E2-D123-482A-AC8C-59D4D366B79C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerSpots.App", "BeerSpots.App\BeerSpots.App.csproj", "{B93FB4E2-D123-482A-AC8C-59D4D366B79C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{3A5F90DB-CF93-4A31-9081-F6CD4EFE4D2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.App.Impl", "BeerSpots.App.Impl\BeerSpots.App.Impl.csproj", "{296BB617-9AB0-413B-8A9B-C3C84132E54C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.App.DependencyInjection", "BeerSpots.App.DependencyInjection\BeerSpots.App.DependencyInjection.csproj", "{BC7CA517-A24F-4F47-806A-35D39C702157}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{81D5ADA8-185E-4A84-9862-775F975EF331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerSpots.Data.DataStore", "BeerSpots.Data.DataStore\BeerSpots.Data.DataStore.csproj", "{E1B62C33-5B04-4C5E-8228-4F9373429E91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +37,28 @@ Global
 		{B93FB4E2-D123-482A-AC8C-59D4D366B79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B93FB4E2-D123-482A-AC8C-59D4D366B79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B93FB4E2-D123-482A-AC8C-59D4D366B79C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{296BB617-9AB0-413B-8A9B-C3C84132E54C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296BB617-9AB0-413B-8A9B-C3C84132E54C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296BB617-9AB0-413B-8A9B-C3C84132E54C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296BB617-9AB0-413B-8A9B-C3C84132E54C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC7CA517-A24F-4F47-806A-35D39C702157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC7CA517-A24F-4F47-806A-35D39C702157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC7CA517-A24F-4F47-806A-35D39C702157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC7CA517-A24F-4F47-806A-35D39C702157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B62C33-5B04-4C5E-8228-4F9373429E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B62C33-5B04-4C5E-8228-4F9373429E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B62C33-5B04-4C5E-8228-4F9373429E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B62C33-5B04-4C5E-8228-4F9373429E91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7300C767-3AF2-4DE4-9EBB-A4F6F98A3B9E} = {81D5ADA8-185E-4A84-9862-775F975EF331}
+		{B93FB4E2-D123-482A-AC8C-59D4D366B79C} = {3A5F90DB-CF93-4A31-9081-F6CD4EFE4D2B}
+		{296BB617-9AB0-413B-8A9B-C3C84132E54C} = {3A5F90DB-CF93-4A31-9081-F6CD4EFE4D2B}
+		{BC7CA517-A24F-4F47-806A-35D39C702157} = {3A5F90DB-CF93-4A31-9081-F6CD4EFE4D2B}
+		{E1B62C33-5B04-4C5E-8228-4F9373429E91} = {81D5ADA8-185E-4A84-9862-775F975EF331}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C4F5485-21DC-4C21-976D-3CCCD69CAE28}
