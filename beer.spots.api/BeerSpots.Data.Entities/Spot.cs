@@ -5,6 +5,7 @@
     /// </summary>
     public class Spot
     {
+        public long Id { get; set; }
         /// <summary>
         /// Short description of place
         /// </summary>
