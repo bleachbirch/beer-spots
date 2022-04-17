@@ -1,4 +1,4 @@
-﻿using BeerSpots.Data.Entities;
+﻿using BeerSpots.App.Models;
 
 namespace BeerSpots.App
 {
@@ -13,34 +13,34 @@ namespace BeerSpots.App
         /// <param name="coordinate"></param>
         /// <param name="radius"></param>
         /// <returns></returns>
-        Task<IEnumerable<Spot?>> GetAsync(Coordinate coordinate, int radius);
+        Task<IEnumerable<SpotDto?>> GetAsync(CoordinateDto coordinate, int radius);
 
         /// <summary>
         /// Returns one spot by his coordinate. Return null, if spot is not founded.
         /// </summary>
         /// <param name="coordinate"></param>
         /// <returns></returns>
-        Task<Spot?> GetSpotAsync(Coordinate coordinate);
+        Task<SpotDto?> GetSpotAsync(CoordinateDto coordinate);
 
         /// <summary>
         /// Creates spot
         /// </summary>
         /// <param name="newSpot"></param>
         /// <returns></returns>
-        Task CreateAsync(Spot newSpot);
+        Task CreateAsync(SpotDto newSpot);
 
         /// <summary>
         /// Edites spot
         /// </summary>
         /// <param name="spot"></param>
         /// <returns></returns>
-        Task EditAsync(Spot spot);
+        Task EditAsync(SpotDto spot);
 
         /// <summary>
         /// Deletes spot
         /// </summary>
         /// <param name="spot"></param>
         /// <returns></returns>
-        Task DeleteAsync(Spot spot);
+        Task DeleteAsync(SpotDto spot);
     }
 }

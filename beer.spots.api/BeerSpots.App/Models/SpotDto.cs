@@ -1,10 +1,9 @@
-﻿namespace BeerSpots.Data.Entities
+﻿namespace BeerSpots.App.Models
 {
-    /// <summary>
-    /// Beer spot
-    /// </summary>
-    public class Spot
+    public class SpotDto
     {
+        public long Id { get; set; }
+
         /// <summary>
         /// Short description of place
         /// </summary>
@@ -13,7 +12,7 @@
         /// <summary>
         /// Where is it
         /// </summary>
-        public Coordinate Сoordinate { get; set; }
+        public CoordinateDto Сoordinate { get; set; }
 
         /// <summary>
         /// Full description
@@ -23,6 +22,7 @@
         /// <summary>
         /// 
         /// </summary>
-        public Comment[]? Comments { get; set; }
+        public CommentDto[]? Comments { get; set; }
+
     }
 }
