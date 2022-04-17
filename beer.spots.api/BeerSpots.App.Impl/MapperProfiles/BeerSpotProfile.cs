@@ -9,12 +9,15 @@ namespace BeerSpots.App.Impl.MapperProfiles
         public BeerSpotProfile()
         {
             CreateMap<SpotDto, Spot>()
-                .ForMember(m => m.Id, opt => opt.Ignore());
+                .ForMember(m => m.Id, opt => opt.Ignore())
+                .ReverseMap();
 
             CreateMap<CoordinateDto, Coordinate>()
-                .ForMember(m => m.Id, opt => opt.Ignore());
+                .ForMember(m => m.Id, opt => opt.Ignore())
+                .ReverseMap();
 
-            CreateMap<CommentDto, Comment>();
+            CreateMap<CommentDto, Comment>()
+                .ReverseMap();
         }
     }
 }

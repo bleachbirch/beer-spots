@@ -7,7 +7,7 @@ namespace BeerSpots.Data.DataStore.Extensions
     {
         public static IServiceCollection AddBeerSpotsDataStore(this IServiceCollection services)
         {
-            return services.AddScoped<IDataStore, BeerSpotsDataStore>();
+            return services.AddTransient<IDataStore, BeerSpotsDataStore>();
         }
     }
 }

@@ -22,7 +22,20 @@ namespace BeerSpots.Data.DataStore
 
         public Task<IQueryable<Spot>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return Task.FromResult(new List<Spot>
+            {
+                new Spot
+                {
+                    Id = 1,
+                    Name = "Колдырь-плейс",
+                    Description = "Здесь ты можешь найти братишку, которого твоя мать сдала в детдом",
+                    Сoordinate = new Coordinate
+                    {
+                        Latitude = 59.9114620m,
+                        Longitude = 30.3144620m
+                    }
+                }
+            }.AsQueryable());
         }
 
         public Task<Spot?> GetAsync(long id)
