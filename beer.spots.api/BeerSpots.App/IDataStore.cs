@@ -11,14 +11,14 @@ namespace BeerSpots.App
         /// Returns IQueryable object with spot's entities
         /// </summary>
         /// <returns></returns>
-        Task<IQueryable<Spot>> GetAllAsync();
+        Task<IEnumerable<Spot>> GetAllAsync();
 
         /// <summary>
         /// Get spot by id or null, if not found
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        Task<Spot?> GetAsync(long id);
+        Task<Spot?> GetAsync(string id);
 
         /// <summary>
         /// Returns spot by coordinate or null
@@ -46,7 +46,7 @@ namespace BeerSpots.App
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        Task DeleteAsync(long id);
+        Task DeleteAsync(string id);
 
         /// <summary>
         /// Deletes spot by coordinate

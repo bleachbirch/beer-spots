@@ -2,8 +2,6 @@
 {
     public class SpotDto
     {
-        public long Id { get; set; }
-
         /// <summary>
         /// Short description of place
         /// </summary>
@@ -12,7 +10,7 @@
         /// <summary>
         /// Where is it
         /// </summary>
-        public CoordinateDto Сoordinate { get; set; }
+        public CoordinateDto Coordinate { get; set; }
 
         /// <summary>
         /// Full description
@@ -20,9 +18,9 @@
         public string? Description { get; set; }
 
         /// <summary>
-        /// 
+        /// TODO
         /// </summary>
-        public CommentDto[]? Comments { get; set; }
+        //public CommentDto[]? Comments { get; set; }
 
     }
 }

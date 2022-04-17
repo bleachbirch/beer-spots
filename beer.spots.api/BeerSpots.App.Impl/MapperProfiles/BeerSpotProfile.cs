@@ -13,7 +13,6 @@ namespace BeerSpots.App.Impl.MapperProfiles
                 .ReverseMap();
 
             CreateMap<CoordinateDto, Coordinate>()
-                .ForMember(m => m.Id, opt => opt.Ignore())
                 .ReverseMap();
 
             CreateMap<CommentDto, Comment>()

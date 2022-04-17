@@ -23,7 +23,7 @@ namespace BeerSpots.App.Impl
 
         public async Task DeleteAsync(SpotDto spot)
         {
-            var coordinate = _mapper.Map<Coordinate>(spot.Сoordinate);
+            var coordinate = _mapper.Map<Coordinate>(spot.Coordinate);
             await _dataStore.DeleteAsync(coordinate);
         }
 
@@ -35,9 +35,9 @@ namespace BeerSpots.App.Impl
 
         public async Task<IEnumerable<SpotDto?>> GetAsync(CoordinateDto coordinate, int radius)
         {
-            var query = await _dataStore.GetAllAsync();
+            var result = await _dataStore.GetAllAsync();
             // TODO: radius limit
-            return query.ToList().Select(x => _mapper.Map<SpotDto>(x));
+            return result.Select(x => _mapper.Map<SpotDto>(x));
         }
 
         public async Task<SpotDto?> GetSpotAsync(CoordinateDto coordinate)

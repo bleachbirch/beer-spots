@@ -5,8 +5,6 @@
     /// </summary>
     public class Comment
     {
-        public long Id { get; set; }
-
         /// <summary>
         /// Content of comment
         /// </summary>
@@ -15,6 +13,6 @@
         /// <summary>
         /// Who left a comment 
         /// </summary>
-        public User Author { get; set; }
+        public string AuthorId { get; set; }
     }
 }

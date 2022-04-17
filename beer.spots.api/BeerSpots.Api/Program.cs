@@ -2,7 +2,8 @@ using BeerSpots.App.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddBeerSpotsApp();
+var dbConfig = builder.Configuration.GetSection("BeerSpotsDb");
+builder.Services.AddBeerSpotsApp(dbConfig);
 builder.Services.AddControllers();
 
 var app = builder.Build();

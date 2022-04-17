@@ -5,7 +5,7 @@
     /// </summary>
     public class User
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// User name
